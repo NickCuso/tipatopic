@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>    
+    <meta charset=utf-8>
+    <title>Tip-a-Topic: Support The Content You Want To See</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+    <script src="static/settings.js"></script>
+    <script src="js/Global.js"></script>
+    <script src="js/nebulas.js"></script>
+    <script src="js/nebPay.js"></script>
+    <script src="js/HardlyNeb.js"></script>
+    <script src="js/Template.js" defer="true"></script> 
+    <script src="js/New.js" defer="true"></script> 
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="container mt-3">
+       
+    <div class="row justify-content-center" id="card-list">
+    </div>
+        <div class="row text-center mt-5">
+            <h5 class="col-12">Request a New Topic</h5>
+                <div class="col text-right mt-4">
+                    <label for="new-topic-domain">Topic Website:</label>
+                </div>
+                <div class="col text-left mt-4">
+                    <input type="text" id="new-topic-domain" maxlength="100"></input>
+                </div>
+                <div class="w-100"></div>            
+                <div class="col text-right mt-3">
+                    <label for="tip-amount">Tip Amount:</label>
+                </div>
+                <div class="col text-left mt-3">
+                    <input type="number" id="tip-amount" min="0.0001" step="1"></input>
+                </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col">
+                <button class="btn btn-primary" onclick="submit()">Request Topic</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="card mt-5">
+                <h5 class="card-title text-center">Suggesting New Topics</h5>
+                You can propose any crypto related topic, it does not have to be a coin or token.
+                Previously covered topics are fine too, there's always more to say.
+                <br><br>
+                Please simply enter the website's domain for us to look into.
+                <br><br>
+                The tip you enter will be held by the smart contract in escrow.
+                If I'm not interested, you'll be refunded directly.
+                If I take too long, you can get your money back.
+                Once I start working on the video, the funds will be locked for up to a week.
+                When the video goes live, the funds are sent to my wallet.
+                <br><br>
+                There is a <a href="Completed.html">history of everything claimed</a> to date to keep me honest.
+            </div>
+        </div>    
+
+        <div id="footer"></div>
+        
+    </div>
+
+</body>
+</html>
